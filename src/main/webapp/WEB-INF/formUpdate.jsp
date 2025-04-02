@@ -8,7 +8,7 @@
     <title>Editar Genero</title>
 </head>
 <body>
-    <h1>Editar Tarefa</h1>
+    <h1>Editar Genero</h1>
     <form action="/generos/update" method="post">
         <input type="hidden" name="id" value="${genero.id}" />
         <label>Descrição</label>

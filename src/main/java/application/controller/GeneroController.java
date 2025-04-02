@@ -3,7 +3,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org. springframework.ui.Model;
+import org.springframework.ui.Model;
 import application.repository.GeneroRepository;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -17,7 +17,7 @@ public class GeneroController {
 
     @RequestMapping(value = {"/list", ""})
     public String select(Model ui) {
-        ui.addAttribute("tarefas", generoRepo.findAll());
+        ui.addAttribute("generos", generoRepo.findAll());
         return "list";
     }
 

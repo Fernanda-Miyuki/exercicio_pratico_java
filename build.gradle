@@ -1,7 +1,7 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.3.3'
-	id 'io.spring.dependency-management' version '1.1.6'
+	id 'org.springframework.boot' version '3.0.6' //framework spring boot - servidor integrado
+	id 'io.spring.dependency-management' version '1.1.0' //gerenciamento de dependencias do spring
 }
 
 repositories {
@@ -9,12 +9,11 @@ repositories {
 }
 
 dependencies {
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web:3.4.3' //maven central 
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:11.0.4' //maven central --> vamos rodar jsp
+	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.2' //jakarta
+	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1' //glassfish
+	implementation 'jakarta.el:jakarta.el-api:6.0.1' //expression language
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.4.3'
 	implementation 'mysql:mysql-connector-java:8.0.33'
-	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0'
-	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
 }
