@@ -5,11 +5,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Generos</title>
+    <title>Gêneros</title>
 </head>
 <body>
-    <h1>Lista de Generos</h1>
-    <a href="/generos/insert">Novo Genero</a>
+    <h1>Lista de Gêneros</h1>
+    <a href="/generos/insert">Novo Gênero</a>
     <ul>
         <c:forEach var="item" items="${generos}">
             <li>${item.descricao} | <a href="/generos/update?id=${item.id}">Editar</a>

@@ -5,10 +5,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Editar Genero</title>
+    <title>Editar Gênero</title>
 </head>
 <body>
-    <h1>Editar Genero</h1>
+    <h1>Editar Gênero</h1>
     <form action="/generos/update" method="post">
         <input type="hidden" name="id" value="${genero.id}" />
         <label>Descrição</label>
